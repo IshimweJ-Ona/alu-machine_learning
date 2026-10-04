@@ -32,4 +32,8 @@ def poly_integral(poly, C=0):
         if value.is_integer():
             value = int(value)
         integral.append(value)
+
+    while len(integral) > 1 and integral[1] == 0:
+        integral.pop(1)
+
     return integral
