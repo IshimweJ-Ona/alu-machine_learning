@@ -33,7 +33,7 @@ def poly_integral(poly, C=0):
             value = int(value)
         integral.append(value)
 
-    while len(integral) > 1 and integral[1] == 0:
-        integral.pop(1)
+    while len(integral) > 1 and integral[-1] == 0:
+        integral.pop()
 
     return integral
