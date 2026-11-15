@@ -30,3 +30,4 @@ class MultiNormal:
         exponent = -0.5 * np.matmul(np.matmul(diff.T, inv), diff)
         norm = 1 / np.sqrt((2 * np.pi) ** d * det)
         return float(norm * np.exp(exponent))
+    
